@@ -1,0 +1,787 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/*  slider btn  */
+
+.sliderAnimatedBtn.specialHoveringEffect{
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+   width: fit-content;
+   background-color: #ceae6d;
+   color: #fff;
+   padding: 10px 18px;
+   overflow-y: hidden;
+}
+.sliderAnimatedBtn.specialHoveringEffect:hover{
+   color: black !important;
+   background-color: #fff;
+   text-shadow: ntwo;
+}
+.sliderAnimatedBtn.specialHoveringEffect:hover:before{
+    top: 0%;
+    bottom: auto;
+    height: 100%;
+}
+.sliderAnimatedBtn.specialHoveringEffect:before{
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #fff !important;
+    background: #fff;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+
+/*  */
+
+
+
+
+
+/* Navbar Component */
+
+
+.logo{
+  margin-left: 5rem;
+}
+
+
+.transparentSearchBox {
+  background: transparent;
+  border: none  ;
+  border-bottom: 1px solid black;
+  width: 250px;
+}
+.transparentSearchBox:focus {
+  background: transparent;
+  border: none  ;
+  border-bottom: 1px solid black;
+}
+.navbar-expand-md{
+  color: red;
+  background-color: #ceae6d;
+}
+
+.nav-item{
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  color: black;
+  line-height: 1px;
+}
+
+ .far,
+ .fas{
+   cursor: pointer;
+ }
+
+nav.navbar ul.navbar-nav li a.nav-link:hover {
+color: #ceae6d;
+}
+
+
+input::placeholder{
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+
+
+.fa-user::before{
+  margin-left: 3rem;
+}
+
+.far:hover,
+.fas:hover{
+color: #ceae6d;
+}
+
+.fa-search:hover{
+color: #000;
+
+}
+
+.badge {
+  height: 1.3rem;
+  border-radius: 40px !important;
+  background-color: #ceae6d;
+  position: relative;
+  top: -13px;
+  left: -11px;
+  width: 1.3rem !important;
+  color: white !important;
+  font-weight: bold !important;
+  line-height: 1.2 !important;
+
+}
+
+/* language picker */
+
+.flag-select__options{
+  visibility: visible !important;
+}
+
+.flag-select__options{
+  border-radius: 10px !important;
+}
+.flag-select__option__label:hover{
+   color: #ceae6d !important;
+}
+.flag-select__option:not(.flag-select__option--placeholder):hover{
+   background-color: transparent !important;
+
+}
+/*  */
+
+/*  */
+
+/* animated button  */
+
+.animated-button.thar-two {
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  width: fit-content;
+  background-color: white;
+  border: 1px solid #4c4c4c;
+  color: #4c4c4c;
+  padding: 10px 18px;
+  overflow-y: hidden;
+  
+}
+
+.animated-button.thar-two:hover {
+  color: #fff !important;
+  background-color: #ceae6d;
+  text-shadow: ntwo;
+}
+
+.animated-button.thar-two:hover:before {
+  top: 0%;
+  bottom: auto;
+  height: 80%;
+}
+
+.animated-button.thar-two:before {
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 0px;
+  width: 100%;
+  z-index: -1;
+  content: '';
+  color: #000 !important;
+  background: #ceae6d;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+/*  */
+
+/* Back to top button */
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+      right: 30px;
+
+  z-index: 99;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 1.3vw;
+  border-radius: 50%;
+  text-align: center;
+animation-name: scrollUp;
+animation-duration: 0.5s;
+height: 2.5vw;
+}
+@keyframes scrollUp {
+  from {
+      right: 0px;
+
+  }
+
+  to {
+      right: 20px;
+
+  }
+}
+
+#scrollToTopBtn:hover {
+  background-color: #ceae6d;
+  color: #fff;
+}
+
+.fa-chevron-up{
+ top:50%;
+ left:50%;
+ transform: translate(-50%, -50%);
+ margin:0;
+ position: absolute;
+ font-size: 1.5vw;
+}
+.fa-chevron-up:hover{
+color: #fff !important;
+}
+
+
+
+/*  */
+
+
+
+
+/* about Component */
+
+#welcome{
+  letter-spacing:6px;
+  color: #ceae6d;
+  text-align: center;
+}
+
+#welcomingTitle{
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: -1px;
+  text-align: center;
+}
+.row{
+  --bs-gutter-x: 0;
+  margin-right: 0 !important;
+}
+
+#welcomingParagraph{
+  text-align: center;
+  font-size: 14px;
+}
+/*  */
+
+
+
+/* Jasmine Products Component */
+
+#jasmineProducts{
+  width: fit-content;
+  border-bottom: 1px solid rgb(186, 185, 185);
+  margin-top: 6rem;
+  margin-left: 3rem;
+  color: #103426;
+}
+.card-text{
+  letter-spacing: 1px;
+}
+
+
+
+.card {
+  cursor: pointer;
+  border: 0 !important;
+}
+#card:hover {
+  color: #ceae6d;
+}
+
+
+
+.bott{
+  bottom: 0;
+}
+.croppingElem{
+  height: 0;
+  width: 150%  !important;
+  color: transparent;
+}
+
+#card:hover .croppingElem {
+  height: 7.5%;
+  transition: all 1s ease;
+}
+
+#card-text,
+#card-text:hover {
+  color: black;
+}
+
+#shopNow{
+  width: fit-content;
+  color: #ceae6d;
+  letter-spacing: 1px;
+  border-bottom: 1px solid black;
+  margin-top: 1rem;
+}
+
+.card-title{
+  font-weight: 400;
+  font-size: 2.3rem;
+
+}
+
+
+/*  */
+
+
+/* Featured Products Component */
+
+#featuredProducts {
+  width: fit-content;
+  border-bottom: 1px solid rgb(186, 185, 185);
+  margin-top: 10rem;
+}
+.featuredList{
+  list-style-type: none;
+  text-align: center;
+}
+.featuredList li{
+  font-weight: 600;
+  color: #103426;
+  cursor: pointer;
+  float: left;
+  padding-left: 3rem;
+}
+.activeItem{
+  color: #ceae6d !important;
+}
+
+
+
+.jasmineTowel{
+  font-weight:600;
+  color: #4c4c4c;
+  display: inline-block;
+}
+
+.jasmineTowel:hover {
+  color:#ceae6d;
+}
+
+.cardText{
+  color: #4c4c4c;
+
+}
+
+.price{
+  float: right;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ceae6d;
+}
+
+
+.signContainer {
+
+     z-index: 99;
+     outline: none;
+     background-color: #000;
+     color: white;
+     cursor: pointer;
+     padding: 1.8vw;
+     border-radius: 50%;
+     text-align: center;
+     position: relative;
+     top: -2.2vw;
+     left: 41%;
+     width: 45px;
+     height: 45px;
+}
+
+.signContainer:hover{
+  background-color: #ceae6d;
+  color: #fff;
+}
+
+.fa-minus,
+.fa-plus {
+ position: absolute;
+ top: 50%;
+ left: 32%;
+ line-height: 0;
+ font-size: 21px;
+ }
+
+
+.fa-minus:hover,
+.fa-plus:hover{
+  color: #fff;
+}
+
+
+
+/*  Contact info component  */
+
+#contactInfo{
+  border-bottom: 1px solid #103426;
+  width: fit-content;
+  color: #103426;
+  text-align: start;
+}
+
+#contactPara,
+.info{
+  font-size: 0.9rem;
+  color: #727171;
+}
+
+.contactUsIcons{
+  background-color: black;
+  color: #ceae6d;
+  border-radius: 50%;
+  padding: 2%;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+
+}
+#followUs{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.fa-facebook-f ,
+.fa-pinterest,
+.fa-twitter,
+.fa-instagram
+{
+  font-size: 1.3rem;
+}
+.fa-facebook-f:hover ,
+.fa-pinterest:hover,
+.fa-twitter:hover,
+.fa-instagram:hover
+{
+color: #ceae6d;
+  cursor: pointer;
+
+}
+
+#subscribeNews{
+  border-bottom: 1px solid white;
+  width: fit-content;
+  margin-top: 5.5rem;
+}
+
+#subscribeNewsCover{
+  background-image: url('http://paradigmsolutions.me/jasmine/images/towels/product-img/sub.jpg');
+}
+
+#subscribeNewsPara{
+  font-size: 1.3rem;
+}
+
+.btn{
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.btn:hover{
+  color: #ceae6d !important;
+  background-color: transparent !important;
+}
+
+.form-control{
+  background-color: transparent !important;
+  height: calc(2.7em + .75rem + 2px) !important;
+  border: 1px solid #fff !important;
+}
+
+#subscribeNewsInput::placeholder {
+  color: #fff !important;
+  font-size: 0.9rem !important;
+  letter-spacing: 1px !important;
+}
+
+.inputWithLabel{
+  margin-top: 4.5rem;
+}
+
+#email{
+  letter-spacing: 2px ;
+}
+
+.fa-envelope-open{
+  font-size: 2rem !important;
+}
+
+
+/*  */
+
+
+
+
+/* footer  */
+
+.footerLinks{
+  margin-top: 7rem;
+}
+
+.footer{
+  background-color: #103426;
+  color: #b1b1b1;
+}
+.footerLinks p:hover {
+  color: #ceae6d;
+  cursor: pointer;
+}
+
+.footerTitles{
+  margin-bottom: 1.5rem !important;
+  color: #fff !important;
+  font-weight: bold !important;
+}
+.footerTitles:hover{
+  color: #fff !important;
+  cursor: auto !important;
+}
+
+
+
+
+/*  */
+
+
+
+/* product details component */
+
+.header{
+  background-color: rgb(232, 226, 226);
+}
+
+#prodImg{
+  height: 130%;
+ 
+}
+.headerImg{
+float:left;
+cursor: pointer;
+}
+
+#prodDetails{
+  font-size: 30px;
+  color: #103426;
+  margin-top: 2.5rem;
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+#prodTitle{
+  font-size: 30px;
+  margin-top: 8rem;
+  text-align: center;
+  color:#ceae6d;
+
+}
+
+#prodDescription,
+#prodPrice {
+  font-size: 20px;
+  text-align: center;
+
+}
+
+#prodPrice{
+  color: #ceae6d;
+}
+
+
+/*  */
+
+
+
+
+
+/* Side-bar */
+
+#sidePanelNavigator{
+  margin-left: 10%;
+  list-style-type: none;
+  font-weight: bold;
+}
+#sidePanelNavigator li{
+  margin-top: 10px;
+  transition:all 0.1s ease;
+}
+#sidePanelNavigator li:hover{
+  color: #ceae6d;
+  cursor: pointer;
+}
+
+.sidePanelList  li{
+  display: block;
+  list-style-type: none;
+  float: left;
+  transition:all 0.1s ease;
+}
+.sidePanelList .far,
+.fas {
+text-align: center;
+}
+
+#menu{
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  top: 4%;
+  left: 39%;
+}
+
+#x{
+  margin-right: 20px;
+}
+
+#sidenav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 997;
+  display: none;
+}
+
+.nav-open #sidenav-overlay {
+  display: block;
+}
+
+.sidepanel {
+  width: 0;
+  /* Specify a height */
+  height: 100%;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 99999;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: white;
+  /* Black*/
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidepanel */
+  color: black;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none !important;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #ceae6d;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 36px;
+  margin-left: 50px;
+
+}
+.closebtn:hover{
+  background-color: #ceae6d;
+
+}
+.closebtn:hover #x{
+color: white;
+text-decoration: none;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  z-index: 999;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#languagePickerDiv:hover{
+color: black;
+}
+
+
+/*  */
+
+
+
+/* Media Queries */
+@media (max-width: 1300px) {
+  .searchBox {
+display: none;  }
+
+}
+@media (max-width: 1010px) {
+ .fa-user::before {
+   margin-left: 2.8rem;
+ }
+ 
+ 
+}
+@media (max-width: 730px) {
+
+ .flag-select__btn{
+   margin-top: 10px;
+ }
+}
+@media (max-width: 990px) {
+ .fa-minus,
+ .fa-plus{
+   left: 32%;
+
+ }
+ .signContainer {
+   top: -2.8vw;
+
+ }
+}
+@media (max-width: 574px) {
+ .signContainer{
+   left: 46%;
+   top: -5vw;
+
+ }
+}
+@media (max-width:770px) {
+ .croppingElem{
+   width: 100% !important;
+   
+ }
+}
+
+

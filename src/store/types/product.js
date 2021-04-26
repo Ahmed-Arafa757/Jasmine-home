@@ -1,0 +1,1 @@
+export const SEND_PRODUCT = "SEND_PRODUCT";
